@@ -1,0 +1,8 @@
+{
+  "name": "Remix Smart Gym Connect",
+  "description": "Réservation d\u0027équipements de fitness en temps réel, suivi de disponibilité en direct et gestion de séances.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

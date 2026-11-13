@@ -1,0 +1,227 @@
+---
+name: Smart Gym Connect
+colors:
+  surface: '#f7fafb'
+  surface-dim: '#d7dadb'
+  surface-bright: '#f7fafb'
+  surface-container-lowest: '#ffffff'
+  surface-container-low: '#f1f4f5'
+  surface-container: '#ebeeef'
+  surface-container-high: '#e5e9ea'
+  surface-container-highest: '#e0e3e4'
+  on-surface: '#181c1d'
+  on-surface-variant: '#3f484a'
+  inverse-surface: '#2d3132'
+  inverse-on-surface: '#eef1f2'
+  outline: '#6f797a'
+  outline-variant: '#bec8ca'
+  surface-tint: '#146871'
+  primary: '#00565e'
+  on-primary: '#ffffff'
+  primary-container: '#1f6f78'
+  on-primary-container: '#a7eff9'
+  inverse-primary: '#8ad2dc'
+  secondary: '#006e2e'
+  on-secondary: '#ffffff'
+  secondary-container: '#8cfa9f'
+  on-secondary-container: '#007432'
+  tertiary: '#724100'
+  on-tertiary: '#ffffff'
+  tertiary-container: '#945600'
+  on-tertiary-container: '#ffddbf'
+  error: '#ba1a1a'
+  on-error: '#ffffff'
+  error-container: '#ffdad6'
+  on-error-container: '#93000a'
+  primary-fixed: '#a6eef9'
+  primary-fixed-dim: '#8ad2dc'
+  on-primary-fixed: '#001f23'
+  on-primary-fixed-variant: '#004f56'
+  secondary-fixed: '#8cfa9f'
+  secondary-fixed-dim: '#70dd85'
+  on-secondary-fixed: '#002109'
+  on-secondary-fixed-variant: '#005321'
+  tertiary-fixed: '#ffdcbe'
+  tertiary-fixed-dim: '#ffb86f'
+  on-tertiary-fixed: '#2c1600'
+  on-tertiary-fixed-variant: '#693c00'
+  background: '#f7fafb'
+  on-background: '#181c1d'
+  surface-variant: '#e0e3e4'
+typography:
+  headline-lg:
+    fontFamily: Inter
+    fontSize: 28px
+    fontWeight: '700'
+    lineHeight: 36px
+    letterSpacing: -0.02em
+  headline-lg-mobile:
+    fontFamily: Inter
+    fontSize: 24px
+    fontWeight: '700'
+    lineHeight: 32px
+    letterSpacing: -0.015em
+  headline-md:
+    fontFamily: Inter
+    fontSize: 20px
+    fontWeight: '600'
+    lineHeight: 28px
+    letterSpacing: -0.01em
+  headline-md-mobile:
+    fontFamily: Inter
+    fontSize: 18px
+    fontWeight: '600'
+    lineHeight: 24px
+    letterSpacing: -0.01em
+  headline-sm:
+    fontFamily: Inter
+    fontSize: 16px
+    fontWeight: '600'
+    lineHeight: 22px
+  body-lg:
+    fontFamily: Inter
+    fontSize: 16px
+    fontWeight: '400'
+    lineHeight: 24px
+  body-md:
+    fontFamily: Inter
+    fontSize: 15px
+    fontWeight: '400'
+    lineHeight: 22px
+  body-sm:
+    fontFamily: Inter
+    fontSize: 13px
+    fontWeight: '400'
+    lineHeight: 18px
+  label-lg:
+    fontFamily: Inter
+    fontSize: 14px
+    fontWeight: '600'
+    lineHeight: 20px
+    letterSpacing: 0.01em
+  label-md:
+    fontFamily: Inter
+    fontSize: 13px
+    fontWeight: '500'
+    lineHeight: 18px
+  label-sm:
+    fontFamily: Inter
+    fontSize: 11px
+    fontWeight: '600'
+    lineHeight: 14px
+    letterSpacing: 0.03em
+rounded:
+  sm: 0.25rem
+  DEFAULT: 0.5rem
+  md: 0.75rem
+  lg: 1rem
+  xl: 1.5rem
+  full: 9999px
+spacing:
+  gutter: 1rem
+  margin: 1rem
+  space-xs: 0.25rem
+  space-sm: 0.5rem
+  space-md: 1rem
+  space-lg: 1.5rem
+  space-xl: 2rem
+---
+
+## Brand & Style
+
+The design system embodies a balanced, calm, and high-performance digital wellness atmosphere. Designed for modern gym members, it balances real-time technological precision with an approachable, invigorating fitness ambiance. 
+
+The aesthetic is clean, functional, and modern minimalist with soft tactile depth:
+- **Clarity over clutter:** Dense data (machine availability, dynamic scheduling) is simplified via prominent visual status cues and structured surface planes.
+- **Dynamic vitality:** Real-time synchronization is visually represented using subtle pulsing badges and clear status signals rather than distracting motion.
+- **Restrained trust:** The signature deep teal fosters focus and clinical reliability, while generous spacing and soft card elevations keep the experience light and effortless.
+
+## Colors
+
+The palette establishes an immediate reading of physical space availability and device health through high-visibility semantics against calm neutral surfaces.
+
+### Semantic Tones & Status Roles
+- **Primary (`#1F6F78`):** Deep oceanic teal. Anchor for active navigation items, primary actions, category highlights, and high-emphasis headers.
+- **Primary Tint (`#E8F3F4`):** Soft teal-tinted surface. Reserved for selected state backgrounds, sub-navigation active pills, table headers, and container highlights.
+- **Available / Libre (`#2E9E4F`):** Clear emerald green. Denotes equipment immediately ready for use, check-ins open, and successful status confirmations.
+- **Occupied / Occupé (`#D9363E`):** Distinct crimson. Represents machines currently in active sessions or fully booked slots.
+- **Reserved / Réservé (`#E08A1E`):** Warm amber. Marks machines booked by others or upcoming booked slots pending confirmation.
+- **Disabled / Indisponible (`#90A4AE`):** Slate grey. Indicates offline machines, maintenance locks, or inactive time windows.
+
+### Surfaces & Typography Tones
+- **Canvas Base:** `#F3F6F7` provides a cool, anti-glare canvas across the entire application viewport.
+- **Surface Elevation:** Pure `#FFFFFF` delivers crisp contrast for actionable modules, cards, and modal bottom sheets.
+- **Text Primary:** `#0F172A` delivers high contrast against white and light neutral surfaces.
+- **Text Secondary:** `#64748B` provides comfortable legibility for auxiliary metrics, equipment tags, and timestamps.
+
+## Typography
+
+The type system is optimized for quick scanning in motion within gym environments. Built on a single robust grotesque typeface, it prioritizes clarity, legibility, and numeric differentiation.
+
+- **Localization Rules:** All content is set in French. Use standard 24-hour notation without periods (`17:00`, `08:30`) and strict French date formatting (`JJ/MM/AAAA`).
+- **Tabular Figures:** For countdown timers, real-time heart rate or machine stats, and slot ranges (`08:00 - 09:00`), utilize tabular numbers (`tnum` OpenType feature) to avoid jitter during live updates.
+- **Hierarchy Enforcement:** Section titles use bold headlines. Subtitles provide categorical grouping in semibold weights, while secondary information consistently utilizes `body-sm` or `label-md` in `#64748B`.
+
+## Layout & Spacing
+
+The layout is built for fluid mobile-first experiences with a structured single-column vertical flow and horizontal carousels for slot selectors.
+
+- **Mobile Viewport (Base):** Standard canvas margin is fixed at `1rem` (16px) with an inner column gutter of `1rem` (16px). Content blocks never touch viewport edges unless designated as edge-to-edge carousels.
+- **Navigation Safety:** Bottom canvas retains dynamic padding equal to the height of the fixed navigation bar plus `env(safe-area-inset-bottom)` to guarantee zero occlusion of primary content.
+- **Rhythm & Flow:**
+  - `space-xs` (4px): Inner badge padding, dot-to-label separation.
+  - `space-sm` (8px): Icon-to-text spacing, compact slot list row gaps.
+  - `space-md` (16px): Padding inside cards, gaps between horizontal schedule pills.
+  - `space-lg` (24px): Inter-card vertical margin, section header margins.
+  - `space-xl` (32px): Major functional block boundaries.
+
+## Elevation & Depth
+
+Visual hierarchy uses restrained surface contrast combined with micro-diffused ambient drop shadows. Surfaces elevate through physical layers rather than heavy outlines.
+
+- **Surface Level 0 (Base Canvas):** Flat `#F3F6F7`.
+- **Surface Level 1 (Cards, Modules, Schedule Tiles):** White `#FFFFFF` with `shadow-sm` composed of `0 1px 3px rgba(15, 23, 42, 0.05), 0 1px 2px rgba(15, 23, 42, 0.03)`.
+- **Surface Level 2 (Selected State & Flyout Sheets):** `#FFFFFF` paired with an extended soft blur `0 10px 15px -3px rgba(31, 111, 120, 0.08), 0 4px 6px -4px rgba(31, 111, 120, 0.04)`.
+- **Surface Level 3 (Fixed Bottom Navigation):** Elevated `#FFFFFF` bar with a subtle top directional boundary shadow `0 -2px 10px rgba(15, 23, 42, 0.04)` and a 1px border using `rgba(226, 232, 240, 0.8)`.
+
+## Shapes
+
+The interface balances organic, human-friendly curves with industrial discipline:
+- **Cards & Primary Modules:** 14px to 16px corner radius (`rounded-lg` to `rounded-xl`) creates soft structural containers that frame complex machine data cleanly.
+- **Interactive Controls (Buttons, Inputs, Sheet Containers):** Standardized at 10px to 12px radius, ensuring finger-friendly, comfortable tap targets without turning fully pill-shaped.
+- **Status Indicators & Time Pills:** 9999px fully rounded caps (`rounded-full`) for high scan-ability, distinct visual differentiation from rectangular content cards, and clear state communication.
+
+## Components
+
+### 1. "En Direct" Real-Time Live Indicator
+- **Geometry:** `rounded-full` badge with `0.25rem` vertical and `0.75rem` horizontal padding.
+- **Palette:** Background in `#E8F3F4` with `#1F6F78` text.
+- **Indicator Dot:** 8px circle filled with `#2E9E4F`. Employs a concentric pseudo-element pulse animation expanding outward (`scale(1.8)`, `opacity: 0`) over a 2-second ease-out infinite loop.
+
+### 2. Status Chips & Pills
+- Fully rounded pills (`rounded-full`) displaying a 6px status dot alongside categorical status text:
+  - *Libre:* `#2E9E4F` dot, background `rgba(46, 158, 79, 0.12)`, text `#1F6F78` (or dark green).
+  - *Occupé:* `#D9363E` dot, background `rgba(217, 54, 62, 0.10)`, text `#D9363E`.
+  - *Réservé:* `#E08A1E` dot, background `rgba(224, 138, 30, 0.12)`, text `#9C5B00`.
+  - *Indisponible:* `#90A4AE` dot, background `rgba(144, 164, 174, 0.15)`, text `#546E7A`.
+
+### 3. Equipment Cards
+- Background: `#FFFFFF`. Radius: 16px. Elevation: `shadow-sm`.
+- Layout: 2-column or full-width row with equipment thumbnail, dynamic status chip in the top right, machine label in `headline-sm`, and secondary usage specs (`body-sm` in `#64748B`).
+- Selected card state transitions background to `#E8F3F4` and applies a 1.5px solid outline in `#1F6F78`.
+
+### 4. Interactive Buttons
+- **Primary:** Solid `#1F6F78` fill, white label (`label-lg`), height 48px, radius 12px. Pressed state dims brightness by 10%.
+- **Secondary:** Surface `#E8F3F4`, text `#1F6F78`, 0 border, height 48px, radius 12px.
+- **Disabled:** Background `#F1F5F9`, text `#90A4AE`, pointer events none.
+
+### 5. Time-Slot Grid (08:00 to 20:00)
+- Horizontally scrollable or multi-column grid containing 1-hour/30-minute block nodes.
+- Unselected slot: `#FFFFFF` card, 1px border in `#E2E8F0`, 10px radius, centered 24h timestamp in `label-md`.
+- Selected slot: `#1F6F78` fill, `#FFFFFF` text with high-contrast weight.
+- Booked/Unavailable slot: `#F8FAFC` fill, `#CBD5E1` text, cross-hatch or strike-through style.
+
+### 6. Fixed Bottom Navigation Bar
+- Height: 64px + safe area inset. Fixed base in `#FFFFFF`.
+- 4-Tabs layout: *Équipements*, *Mes réservations*, *Historique*, *Profil*.
+- Active tab displays `#1F6F78` icon with a 4px indicator pill underneath. Inactive tabs display `#64748B`. Labels use `label-sm`.

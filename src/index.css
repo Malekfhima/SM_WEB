@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-sans: "DM Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-canvas: #F3F6F7;
+  --color-surface: #FFFFFF;
+  --color-primary: #1F6F78;
+  --color-primary-deep: #00565E;
+  --color-primary-tint: #E8F3F4;
+  --color-available: #2E9E4F;
+  --color-occupied: #D9363E;
+  --color-reserved: #E08A1E;
+  --color-disabled: #90A4AE;
+  --color-ink: #0F172A;
+  --color-muted: #64748B;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    background-color: #F3F6F7;
+    color: #0F172A;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: var(--font-display);
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Concentric pulse animation for the "En Direct" real-time indicator */
+@keyframes live-ring {
+  0% {
+    transform: scale(1);
+    opacity: 0.75;
+  }
+  100% {
+    transform: scale(2.1);
+    opacity: 0;
+  }
+}
+
+.live-dot-pulse {
+  position: relative;
+}
+
+.live-dot-pulse::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 9999px;
+  background-color: #2E9E4F;
+  animation: live-ring 2s ease-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .live-dot-pulse::after {
+    animation: none;
+  }
+}
+
+/* Cross-hatch pattern for booked/unavailable time slots */
+.slot-unavailable-pattern {
+  background-image: repeating-linear-gradient(
+    -45deg,
+    #F8FAFC,
+    #F8FAFC 6px,
+    #EEF2F6 6px,
+    #EEF2F6 7px
+  );
+}
+
+/* Hide scrollbars cleanly in horizontal date carousels */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
